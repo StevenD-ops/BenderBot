@@ -411,19 +411,6 @@ async function starts() {
 ║❏ ${prefix}ᴛᴛꜱ
 ╙───々
 ╙───々
-╓───「 *_respuestas si comando_* 」
-║❏ victoria
-║❏ mmg
-║❏ ʏᴏᴜʀ
-║❏ ᴀᴡᴀʏ
-║❏ ʙᴏᴍᴀ
-║❏ ɴᴜᴍᴀ
-║❏ ʀᴜʟᴇs
-║❏ ɢᴀʀᴏx
-║❏ ɴᴀɴʙᴀɴ
-║❏ ᴍᴇɴʏᴜᴋᴀɪᴋᴜ
-║❏ ᴜʏɪʀ
-╙───々
 ╓───「 *_ᴏᴡɴᴇʀ ᴍᴇɴᴜ_* 」
 ║♦️ ${prefix}ᴀᴅᴅᴘʀᴇᴍ
 ║♦️ ${prefix}ʀᴇᴍᴏᴠᴇᴘʀᴇᴍ
@@ -519,7 +506,20 @@ dmenu = `╓───「 *_ᴘʀɪᴠᴀᴛᴇ ᴍᴇɴᴜ_* 」
 ║📥 ${prefix}ᴊᴀᴍᴅᴜɴɪᴀ 
 ║📥 ${prefix}ᴛʀᴇɴᴅᴛᴡɪᴛ
 ║📥 ${prefix}ɢᴏᴏɢʟᴇ
-╙───々
+╙───々/*
+╓───「 *_respuestas si comando_* 」
+║❏ victoria
+║❏ mmg
+║❏ ʏᴏᴜʀ
+║❏ ᴀᴡᴀʏ
+║❏ ʙᴏᴍᴀ
+║❏ ɴᴜᴍᴀ
+║❏ ʀᴜʟᴇs
+║❏ ɢᴀʀᴏx
+║❏ ɴᴀɴʙᴀɴ
+║❏ ᴍᴇɴʏᴜᴋᴀɪᴋᴜ
+║❏ ᴜʏɪʀ
+╙───々*/
 ╓───「 *_ᴋᴇʀᴀɴɢ ᴍᴇɴᴜ_* 」
 ║❏ ${prefix}ᴀᴘᴀᴋᴀʜ
 ║❏ ${prefix}ᴋᴀᴘᴀɴᴋᴀʜ
@@ -5361,7 +5361,6 @@ case 'husbu':
         }
         if (budy.includes("rules")){
 		denz.updatePresence(from, Presence.composing)
-		const loli = fs.readFileSync('./mp3/rules.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         const d = fs.readFileSync('./sticker/jget.webp');
         denz.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "song : dj new rules", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
