@@ -716,10 +716,7 @@ dmenu = `╓───「 *_ᴘʀɪᴠᴀᴛᴇ ᴍᴇɴᴜ_* 」
 ║❏ ${prefix}ᴛɪɴʏᴜʀʟ 
 ║❏ ${prefix}ʙɪᴛʟʏ 
 ╙───々 */
-const sir1 = fs.readFileSync('./mp3/sad.mp3')
-const ombi = fs.readFileSync('dnsnew.jpg')
-denz.sendMessage(from, ombi, image, {quoted: mek, caption: dmenu})
-denz.sendMessage(from, sir1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true}) 	    
+denz.sendMessage(from, ombi, image, {quoted: mek, caption: dmenu})	    
             break
 case 'audiomenu':
 			if (isBanned) return reply(mess.only.benned)
