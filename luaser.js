@@ -126,7 +126,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `ʜᴇʟʟᴏ @${num.split('@')[0]}👋\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ *${mdata.subject}*\n\n ━━━━━━━━━━━━━━━
+				teks = `ʜᴇʟʟᴏ @${num.split('@')[0]}👋\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ *${mdata.subject}*\nUtiliza .verify o .registro\n ━━━━━━━━━━━━━━━
 
 🥳 WELCOME 🫂`
 				let buff = await getBuffer(ppimg)
@@ -2164,7 +2164,7 @@ case 'covid':
                     })
                 await limitAdd(sender)
 				break 
-				case 'daftar':
+				case '.registro':
 				case 'verify':
 					denz.updatePresence(from, Presence.composing)
 					if (isUser) return reply('*ʏᴏᴜ ᴀʀᴇ ʀᴇɢɪsᴛᴇʀᴇᴅ!*')
