@@ -75,7 +75,7 @@ const vcard1 = 'BEGIN:VCARD\n'
             + 'TEL;type=CELL;type=VOICE;waid=919895823783:+919895823783\n'
             + 'END:VCARD'
 
-prefix = "!"
+prefix = "."
 name = "LUA SER"
 rdaftar = "𝙇𝙐𝘼 𝙎𝙀𝙍"
 rmenu = "𝙇𝙐𝘼 𝙎𝙀𝙍"
@@ -186,7 +186,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const DnsBot = ["919048417849@s.whatsapp.net"] // ubah aja gapapa
+			const DnsBot = ["18099152058@s.whatsapp.net"] // ubah aja gapapa
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
