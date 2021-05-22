@@ -2864,7 +2864,7 @@ break
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 denz.groupUpdateSubject(from, `${body.slice(9)}`)
-                denz.sendMessage(from, `\`\`\`âœ“Successfully Changing Group Name To\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
+                denz.sendMessage(from, `\`\`\`hecho\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
                 break
                 case 'setdesc':
                 if (isBanned) return reply(mess.only.benned)    
@@ -4338,11 +4338,11 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 						if (isSimi) return reply('Sim mode is active')
 						samih.push(from)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(samih))
-						reply(`\`\`\`Successfully activate simi mode in the group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`on\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						samih.splice(from, 1)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(samih))
-						reply(`\`\`\`âœ“Successfully deactivating simi mode in the group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`off\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On to activate, Off to deactivate')
 					}
