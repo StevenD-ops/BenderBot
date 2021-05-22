@@ -359,7 +359,7 @@ async function starts() {
         	hasil = `        ────────────────
 ʜᴇʏ *${pushname2}* ᴛʀʏ ᴛʏᴘɪɴɢ *${prefix}menu*
         ────────────────`
-denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "type #menu sis", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
+
 }
 		if (bad.includes(messagesLink)) {
 		if (!isGroup) return
