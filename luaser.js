@@ -5666,7 +5666,7 @@ case 'husbu':
                   }
                   if (body.startsWith(`${prefix}${command}`)) {
 comd = `      ────────────────\nʜᴇʏ *${pushname2}* !!!\nᴄᴏᴍᴍᴀɴᴅ *${prefix}${command}*\nɴᴏᴛ ɪɴ ᴏᴜʀ ᴍᴇɴᴜ*${prefix}menu*\n      ────────────────`
-denz.sendMessage(from, comd, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "ɴᴏᴛ ɪɴ #menu", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
+denz.sendMessage(from, comd, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "ɴᴏᴛ ɪɴ #menu", 'jpegThumbnail': fs.readFileSync}}}})
 				  }
                   if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
