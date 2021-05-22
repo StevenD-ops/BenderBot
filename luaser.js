@@ -65,7 +65,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:LUA SER OFC\n'
             + 'ORG:Owner LUA;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=919048417849:+919048417849\n'
+            + 'TEL;type=CELL;type=VOICE;waid=18099152058:+18099152058\n'
             + 'END:VCARD'
        
 const vcard1 = 'BEGIN:VCARD\n'
@@ -83,7 +83,7 @@ botinfo = "𝙇𝙐𝘼 𝙎𝙀𝙍"
 limitt = 999999999
 memberLimit = 1
 ban = []
-premium = ["919048417849@s.whatsapp.net","919895823783@s.whatsapp.net"]
+premium = ["18099152058@s.whatsapp.net","919895823783@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -230,7 +230,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["919048417849@s.whatsapp.net","15749993995@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["18099152058@s.whatsapp.net","15749993995@s.whataapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -728,7 +728,7 @@ dmenu = `╓───「 *_ᴘʀɪᴠᴀᴛᴇ ᴍᴇɴᴜ_* 」
 ║⛄ ${prefix}ʏᴛsᴇᴀʀᴄʜ ʏᴛ sᴇᴀʀᴄʜ
 ║⛄ ${prefix}ᴡɪᴋɪ
 ║
-║ *wa.me/919048417849*
+║ *wa.me/18099152058*
 ╙───々`
 const sir1 = fs.readFileSync('./mp3/sad.mp3')
 const ombi = fs.readFileSync('dnsnew.jpg')
@@ -3081,7 +3081,7 @@ break
                          text: tekst1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    denz.sendMessage('919048417849@s.whatsapp.net', options, text, {quoted: mek})
+                    denz.sendMessage('18099152058@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Problems have been reported to the BOT owner, false reports will not be responded to.')
                     break
                 case 'request':
@@ -3098,7 +3098,7 @@ break
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    denz.sendMessage('919048417849@s.whatsapp.net', options, text, {quoted: mek})
+                    denz.sendMessage('18099152058@s.whatsapp.net', options, text, {quoted: mek})
                     reply('YOUR REQUEST has arrived at the owner of the BOT, Fake requests/main2 will not be responded to.')
                     break
 				case 'memeindo':
@@ -5587,7 +5587,7 @@ case 'husbu':
         const d = fs.readFileSync('./sticker/uyir.webp');
         denz.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "_𝙇𝙐𝘼 𝙎𝙀𝙍_", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
         }
-        if (budy.includes("919048417849")){  // respon tag ubah aja
+        if (budy.includes("18099152058")){  // respon tag ubah aja
         reply(`OI *${pushname2}*, ᴀʏɪsʜ ɴᴛʜɪɴᴀ ɴᴛᴇ ʟᴜᴀ ᴏғᴄ ɴᴇ ᴛᴀɢ ᴄʜʏɪᴛʜᴇ!`)
         const d = fs.readFileSync('./sticker/tag.webp');
         denz.sendMessage(from, d, sticker, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "_𝙇𝙐𝘼 𝙎𝙀𝙍_", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
