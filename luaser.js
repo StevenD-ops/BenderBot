@@ -410,17 +410,25 @@ async function starts() {
 ║	${prefix}ᴛᴛꜱ
 ╙───々
 ╓───「 *_respuestas si comando_* 」
-║❏ victoria
-║❏ mmg
-║❏ ʏᴏᴜʀ
-║❏ ᴀᴡᴀʏ
-║❏ ʙᴏᴍᴀ
-║❏ ɴᴜᴍᴀ
-║❏ ʀᴜʟᴇs
-║❏ ɢᴀʀᴏx
-║❏ ɴᴀɴʙᴀɴ
-║❏ ᴍᴇɴʏᴜᴋᴀɪᴋᴜ
-║❏ ᴜʏɪʀ
+║	victoria
+║	viernes
+║	sabado
+║	pedo
+║	se fue
+║	callese
+║	te la bebiste
+║	sal
+║	el pepe
+║	cerda
+║	puta que oferton
+║	nose
+║	potate
+║	no
+║	dufershmith
+║	contigo
+║	pueden aplauidir
+║	mira
+║	pero no te pongas asi
 ╙───々
 ╓───「 *_ᴏᴡɴᴇʀ ᴍᴇɴᴜ_* 」
 ║	${prefix}ᴀᴅᴅᴘʀᴇᴍ
