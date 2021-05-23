@@ -5470,12 +5470,7 @@ case 'husbu':
 		const loli = fs.readFileSync('./mp3/Achuzz.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-		if (budy.includes("gracias")){
-			denz.updatePresence(from, Presence.composing)
-			const loli = fs.readFileSync('./mp3/graciasf.mp3')
-			denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-			}
-    if (budy.includes("12345678")){
+    if (budy.includes("gracias")){
 		denz.updatePresence(from, Presence.composing)
 		const loli = fs.readFileSync('./mp3/AUD-20210324-WA0550.m4a')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
