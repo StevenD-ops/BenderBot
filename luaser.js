@@ -230,7 +230,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["18099152058@s.whatsapp.net","15749993995@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["18099152058@s.whatsapp.net","18295738880@s.whataapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -5658,10 +5658,10 @@ case 'husbu':
                   reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍>-<`)
                   }
                   if (budy.includes(`tq`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*,  >-<`)
                   }
                   if (budy.includes(`thq`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*,  >-<`)
                   }
                   if (body.startsWith(`${prefix}${command}`)) {
 comd = `      ────────────────\nʜᴇʏ *${pushname2}* !!!\nᴄᴏᴍᴍᴀɴᴅ *${prefix}${command}*\nɴᴏᴛ ɪɴ ᴏᴜʀ ᴍᴇɴᴜ*${prefix}menu*\n      ────────────────`
