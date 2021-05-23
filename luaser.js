@@ -5470,7 +5470,7 @@ case 'husbu':
 		const loli = fs.readFileSync('./mp3/Achuzz.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-    if (budy.includes("gracias gracias")){
+    if (budy.includes("12345678")){
 		denz.updatePresence(from, Presence.composing)
 		const loli = fs.readFileSync('./mp3/AUD-20210324-WA0550.m4a')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -5497,12 +5497,10 @@ case 'husbu':
         denz.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "_𝙇𝙐𝘼 𝙎𝙀𝙍_", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
         }
      
-        if (budy.includes("boong")){
+        if (budy.includes("gracias gracias")){
 		denz.updatePresence(from, Presence.composing)
 		const loli = fs.readFileSync('./mp3/boong.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-        const d = fs.readFileSync('./sticker/jget.webp');
-        denz.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "_𝙇𝙐𝘼 𝙎𝙀𝙍_", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
         }
         if (budy.includes("perfect")){
 		denz.updatePresence(from, Presence.composing)
