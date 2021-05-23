@@ -409,7 +409,7 @@ async function starts() {
 ║	${prefix}ғᴀꜱᴛ
 ║	${prefix}ᴛᴛꜱ
 ╙───々
-╓───「 *_respuestas si comando_* 」
+╓───「 *_respuestas si comando (ojo todos son utilizados en minusculas.)_* 」
 ║	victoria
 ║	viernes
 ║	sabado
