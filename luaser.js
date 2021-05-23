@@ -4525,7 +4525,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					}, 0) // 1000 = 1s,
 					await limitAdd(sender) 
 					break  
-				case 'family100':
+			/*	case 'family100':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 								
@@ -4566,12 +4566,12 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
                  denz.sendMessage(from, randBokep, image, {quoted: mek, caption: randTeks})
 				await limitAdd(sender) 
 				break
-
+*/
 				case 'clone':
 				if (!isOwner) return reply(mess.only.ownerB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Tag target yang ingin di clone')
+					if (args.length < 1) return reply('Seleciona a quien deseas robarle la foto')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag gan')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -4579,9 +4579,9 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 						pp = await denz.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						denz.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`foto de perfil cambiada por la de @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Gagal om')
+						reply('selecciona')
 					}
 					break
 //setting bot
@@ -4590,25 +4590,25 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
-					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
+					reply(`prefix : ${prefix}`)
 					break 
 					case 'setlimit':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					limitt = args[0]
-					reply(`Limit berhasil di ubah menjadi : ${limitt}`)
+					reply(`limite establecido : ${limitt}`)
 					break 
 				case 'setmemlimit':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					memberLimit = args[0]
-					reply(`Limit Member berhasil di ubah menjadi : ${memberLimit}`)
+					reply(`limite de miembro : ${memberLimit}`)
 					break 
 				case 'setnamebot':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					name = body.slice(12)
-					reply(`Nama Bot berhasil di ubah menjadi : ${name}`)
+					reply(`nombre del bot : ${name}`)
 					break 
 				case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -4618,7 +4618,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					reply(`reply berhasil di ubah menjadi : ${rmenu}`)
 				break 
 ////////////
-				case 'wait':
+				/*case 'wait':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 								
@@ -4635,9 +4635,9 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					} else {
 						reply('Just a photo, bro')
 					}
-					break 
+					break */
 					
-			case 'quran':
+			/*case 'quran':
 			 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
           				
@@ -4646,8 +4646,8 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					quran = `${anu.acak.ar.teks}\n\n${anu.acak.id.teks}\nQ.S ${anu.surat.nama} ayat ${anu.acak.id.ayat}`
 					denz.sendMessage(from, quran, text, {quoted: mek})
 					await limitAdd(sender) 
-					break 
-	case 'infocuaca':
+					break */
+	/*case 'infocuaca':
 	 if (isBanned) return reply(mess.only.benned)    
      if (!isUser) return reply(mess.only.userB)
      				
@@ -4662,9 +4662,9 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
              denz.sendMessage(from, `➸ Tempat : ${weather.result.tempat}\n\n➸ Angin : ${weather.result.angin}\n➸ Cuaca : ${weather.result.cuaca}\n➸ Deskripsi : ${weather.result.desc}\n➸ Kelembapan : ${weather.result.kelembapan}\n➸ Suhu : ${weather.result.suhu}\n➸ Udara : ${weather.result.udara}`, text, {quoted: mek})
             }
             await limitAdd(sender)
-            break 
+            break */
 
-         case 'pinterest':
+       /*  case 'pinterest':
          if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 								
@@ -4678,9 +4678,9 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					pinehg = await getBuffer(trest)
 					denz.sendMessage(from, pinehg, image, { caption: '*Pinterest*\n\n*Hasil Pencarian : '+pinte+'*', quoted: mek })
 					await limitAdd(sender) 
-					break 
+					break */
 					
-		case 'jadwalsholat':
+		/*case 'jadwalsholat':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 								
@@ -4727,10 +4727,10 @@ method: 'get'
   } catch {
     reply(mess.wait)
   }
-  break
+  break*/
 
 // premium user
-         case 'joox':
+ /* case 'joox':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				
@@ -4760,8 +4760,8 @@ method: 'get'
                 denz.sendMessage(from, bufferddd, image, {quoted: mek, caption: sck})
                 denz.sendMessage(from, buff, video, {mimetype: 'video/mp4', filename: `${anu.format}.mp4`, quoted: mek})
                 await limitAdd(sender) 
-                break 
-                case 'play':
+                break */
+                /*case 'play':
                     if (args.length < 1) return reply('ᴇɴᴛᴇʀ ᴀ sᴏɴɢ ᴛɪᴛʟᴇ') 
 					costum('[✨] ᴘʀᴏᴄᴇss ʟᴏᴀᴅɪɴɢ', text)
                     anu = await fetchJson(`https://videfikri.com/api/ytplayv2/?query=${args[0]}`, {method: 'get'})
@@ -4778,17 +4778,17 @@ method: 'get'
                     denz.sendMessage(from, anu1, image,{caption: anu2, quoted: mek})
                     anu3 = await getBuffer(anu.result.url)
                     denz.sendMessage(from, anu3, audio, {mimetype: 'audio/mp4', quoted: mek})
-                    break
+                    break*/
                 case 'ytmp3':
   if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (args.length < 1) return reply(`Urlnya mana kak?`)
+				if (args.length < 1) return reply(`Insecta url`)
   reply(mess.wait)
   play = body.slice(7)
-  if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Format link salah, gunakan link youtube')
+  if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Formato de enlace incorrecto, utilice el enlace de Youtube')
   try {
   anu = await fetchJson(`https://api.zeks.xyz/api/ytmp3/2?url=${play}&apikey=apivinz`)
-  infomp3 = `*Audio Ditemukan*\n‣ Judul : ${anu.result.title}\n‣ Source : ${anu.result.source}\n‣ Ukuran : ${anu.result.size}\n\n_Mengirim file silahkan tunggu_\n\n_Jika audio tidak muncul download sendiri menggunakan link dibawah_\n‣ *link* : ${anu.result.link}`
+  infomp3 = `*Audio encontrado*\n‣ Titulo : ${anu.result.title}\n‣ Source : ${anu.result.source}\n‣ size : ${anu.result.size}\n\n_Enviar archivos por favor espere. Si el audio no aparece, descárguese utilizando el siguiente enlace_\n‣ *link* : ${anu.result.link}`
   buffer = await getBuffer(anu.result.thumb)
   lagu = await getBuffer(anu.result.link)
   denz.sendMessage(from, buffer, image, {
@@ -4826,7 +4826,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
     reply(mess.ferr)
   }
   break
- 
+ /*
             case 'smule':
 	       if (isBanned) return reply(mess.only.benned)
 	       
@@ -4842,7 +4842,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					buffer = await getBuffer(anu.result)
 					denz.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Here Bro'})
 					await limitAdd(sender) 	
-					break 
+					break */
                case 'pastebin':
                    if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -4854,7 +4854,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
                    denz.sendMessage(from, `${anu.result}`, text, {quoted: mek})
                    await limitAdd(sender) 				
                    break 
-		case 'bpfont':
+	/*	case 'bpfont':
 			if (isBanned) return reply(mess.only.benned)
 			if (isLimit(sender)) return reply(limitend(pushname2))
 			if (!isUser) return reply(mess.only.userB)
@@ -4863,7 +4863,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 			anu = await fetchJson(`https://api.terhambar.com/bpk?kata=${bp}`, {method: 'get'})
 			reply (anu.text)
 			await limitAdd(sender) 
-			break  
+			break 
 		case 'spamcall':
 			if (isBanned) return reply(mess.only.benned)
 			if (isLimit(sender)) return reply(limitend(pushname2))
@@ -4953,7 +4953,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 			wtime = `*${anu.timezone}*\n*${anu.date}*\n*${anu.time}*`
 			denz.sendMessage(from, wtime, text, {quoted: mek})
 			await limitAdd(sender) 
-			break  
+			break  */
 			
 		 case 'tomp3':
                 if (isBanned) return reply(mess.only.benned)    
@@ -4987,7 +4987,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					break
 
 // Fitur Defacer
-
+/*
 				case 'dorking':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -5100,7 +5100,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					  hasilhash = `Tipe: *${anu.hash_type}*\nChar Tipe: *${anu.char_type}*`
 					  denz.sendMessage(from, hasilhash, text, {quoted: mek})
 					  await limitAdd(sender)
-					  break 
+					  break */
 // akhir encrypt & decrypt Fitur
 
 			case 'google':
@@ -5121,7 +5121,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
                 })
                 await limitAdd(sender) 
                 break 
-                
+                /*
                 case 'addbucin':
                     if (!isOwner) return reply(mess.only.owner)
 				    huu = body.slice(10)
@@ -5147,7 +5147,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					}
 					reply(teks.trim())
 					await limitAdd(sender)
-					break 
+					break */
 case 'husbu':
 				if (!isUser) return reply(mess.only.userB)
 				try {
