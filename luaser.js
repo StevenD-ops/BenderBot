@@ -5472,7 +5472,7 @@ case 'husbu':
         }
 		if (budy.includes("gracias")){
 			denz.updatePresence(from, Presence.composing)
-			const loli = fs.readFileSync('./mp3/graciasc.mp3')
+			const loli = fs.readFileSync('./mp3/graciasf.mp3')
 			denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 			}
     if (budy.includes("12345678")){
