@@ -5256,7 +5256,7 @@ case 'husbu':
 		const loli = fs.readFileSync('./mp3/hai.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-        if (budy.includes("Menyukaiku")){
+        if (budy.includes("sabado")){
 		denz.updatePresence(from, Presence.composing)
 		const loli = fs.readFileSync('./mp3/menyukaiku.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
