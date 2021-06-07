@@ -4766,14 +4766,8 @@ method: 'get'
                     anu1 = await getBuffer(anu.result.thumbnail)
                     anu2 = `➻ *ᴛɪᴛʟᴇ* : ${anu.result.title}\n`
                     anu2 += `➻ *ɪᴅ* : ${anu.result.id}\n`
-<<<<<<< HEAD
               //      anu2 += `➻ *ᴛʏᴘᴇ* : ${anu.result.extension}\n`                   
                     anu2 += `➻ *nombre* : ${anu.result.channel}\n`
-=======
-                    anu2 += `➻ *ᴛʏᴘᴇ* : ${anu.result.extension}\n`                   
-                    anu2 += `➻ *ɴᴀᴍᴇ* : ${anu.result.channel}\n`
-                    anu2 += `➻ *ᴀᴄᴛɪᴠᴇ* : ${anu.result.published_on}\n`
->>>>>>> parent of 58968e0 (..)
                     anu2 += `➻ *ᴠɪᴇᴡs* : ${anu.result.views}\n`
                     anu2 += `➻ *Duracion* : ${anu.result.duration}\n`
                     anu2 += `➻ *sɪᴢᴇ* : ${anu.result.size}\n`
@@ -5580,13 +5574,8 @@ case 'husbu':
 		const loli = fs.readFileSync('./mp3/jz.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-<<<<<<< HEAD
 		if (budy.includes(`Gracias`)) {
                   reply(`de nada puta, ILY *${pushname2}*,  >-<`)
-=======
-		if (budy.includes(`Thanks`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
->>>>>>> parent of 58968e0 (..)
                   }
                   if (budy.includes(`Makasih`)) {
                   reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*,  >-<`)
