@@ -16,7 +16,7 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 
-
+const fs = require("fs")
 const axios = require('axios')
 const request = require('request')
 const moment = require('moment-timezone')
