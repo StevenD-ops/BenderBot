@@ -2885,14 +2885,14 @@ break
 				if (!isUser) return reply(mess.only.userB)
 								
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return denz.sendMessage(from, `idioma porfa*${prefix}bahasa*`, text, {quoted: mek})
+					if (args.length < 1) return denz.sendMessage(from, `Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*`, text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return denz.sendMessage(from, 'donde esta el texto puto', text, {quoted: mek})
+					if (args.length < 2) return denz.sendMessage(from, 'Where the text, bro?', text, {quoted: mek})
 					dtt = body.slice(5)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 48000
-					? reply('muy largo el texto puto')
+					? reply('The text is too much, bro')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -4759,7 +4759,7 @@ method: 'get'
                 denz.sendMessage(from, buff, video, {mimetype: 'video/mp4', filename: `${anu.format}.mp4`, quoted: mek})
                 await limitAdd(sender) 
                 break */
-                case 'play':
+                /*case 'play':
                     if (args.length < 1) return reply('ᴇɴᴛᴇʀ ᴀ sᴏɴɢ ᴛɪᴛʟᴇ') 
 					costum('[✨] ᴘʀᴏᴄᴇss ʟᴏᴀᴅɪɴɢ', text)
                     anu = await fetchJson(`https://videfikri.com/api/ytplayv2/?query=${args[0]}`, {method: 'get'})
@@ -4775,7 +4775,7 @@ method: 'get'
                     denz.sendMessage(from, anu1, image,{caption: anu2, quoted: mek})
                     anu3 = await getBuffer(anu.result.url)
                     denz.sendMessage(from, anu3, audio, {mimetype: 'audio/mp4', quoted: mek})
-                    break
+                    break*/
                 case 'ytmp3':
   if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
