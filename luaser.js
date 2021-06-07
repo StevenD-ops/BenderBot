@@ -4762,6 +4762,7 @@ method: 'get'
                 await limitAdd(sender) 
                 break */
                 case 'play':
+				case 'busca':
                     if (args.length < 1) return reply('ᴇɴᴛᴇʀ ᴀ sᴏɴɢ ᴛɪᴛʟᴇ') 
 					costum('[✨] ᴘʀᴏᴄᴇss ʟᴏᴀᴅɪɴɢ', text)
                     anu = await fetchJson(`https://videfikri.com/api/ytplayv2/?query=${args[0]}`, {method: 'get'})
@@ -4769,10 +4770,9 @@ method: 'get'
                     anu2 = `➻ *Titulo* : ${anu.result.title}\n`
                     anu2 += `➻ *ɪᴅ* : ${anu.result.id}\n`
               //      anu2 += `➻ *ᴛʏᴘᴇ* : ${anu.result.extension}\n`                   
-                    anu2 += `➻ *ɴᴀᴍᴇ* : ${anu.result.channel}\n`
-                    anu2 += `➻ *ᴀᴄᴛɪᴠᴇ* : ${anu.result.published_on}\n`
+                    anu2 += `➻ *nombre* : ${anu.result.channel}\n`
                     anu2 += `➻ *ᴠɪᴇᴡs* : ${anu.result.views}\n`
-                    anu2 += `➻ *ᴅᴜʀᴀsɪ* : ${anu.result.duration}\n`
+                    anu2 += `➻ *Duracion* : ${anu.result.duration}\n`
                     anu2 += `➻ *sɪᴢᴇ* : ${anu.result.size}\n`
                     anu2 += `➻ *ᴅᴇsᴄʀɪᴘᴛɪᴏɴ* : ${anu.result.description}\n`
                     denz.sendMessage(from, anu1, image,{caption: anu2, quoted: mek})
@@ -5577,17 +5577,17 @@ case 'husbu':
 		const loli = fs.readFileSync('./mp3/jz.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-		if (budy.includes(`gracias`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+		if (budy.includes(`Gracias`)) {
+                  reply(`de nada puta, ILY *${pushname2}*,  >-<`)
                   }
                   if (budy.includes(`Makasih`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*,  >-<`)
                   }
                   if (budy.includes(`Tq`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, >-<`)
                   }
                   if (budy.includes(`Thx`)) {
-                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*, 𝙇𝙐𝘼 𝙎𝙀𝙍 >-<`)
+                  reply(`ʏᴏᴜ ᴡᴇʟᴄᴏᴍᴇ, sɪs *${pushname2}*,  >-<`)
                   }
                   if (budy.includes(`Assalamualaikum`)) {
                   reply(`ᴡᴀᴀʟᴀɪᴋᴜᴍꜱᴀʟᴀᴍ ᴋᴀᴋ *${pushname2}*`)
