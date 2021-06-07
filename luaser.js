@@ -16,7 +16,7 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 
-const fs = require("fs")
+
 const axios = require('axios')
 const request = require('request')
 const moment = require('moment-timezone')
@@ -128,7 +128,7 @@ async function starts() {
 				}
 				teks = `ʜᴇʟʟᴏ @${num.split('@')[0]}👋\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ *${mdata.subject}*\nUtiliza .verify o .registro\n ━━━━━━━━━━━━━━━
 
-🥳 WELCOME 🫂`
+🥳 WELCOME `
 				let buff = await getBuffer(ppimg)
 				denz.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				} else if (anu.action == 'promote') {
@@ -307,7 +307,7 @@ async function starts() {
 		denz.updatePresence(from, Presence.composing)
 					}, 10)
 		setTimeout( () => {
-		reply(`ᴍᴀᴀғ 𝙇𝙐𝘼 𝙎𝙀𝙍 ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ *${groupMetadata.subject}*`)
+		reply(` fokius *${groupMetadata.subject}*`)
 		}, 0)
 		}
 					
@@ -838,7 +838,7 @@ denz.sendMessage(from, sir2, MessageType.audio, {quoted: mek, mimetype: 'audio/m
 					}
 					await limitAdd(sender) 
 					break 
-					case 'shopee':
+				/*	case 'shopee':
                       if (isBanned) return reply(mess.only.benned)
 			        if (!isUser) return reply(mess.only.userB)
 			    hmml3 = await fetchJson(`https://pencarikode.xyz/api/shopee?search=${body.slice(8)}&apikey=pais`)
@@ -857,7 +857,7 @@ denz.sendMessage(from, sir2, MessageType.audio, {quoted: mek, mimetype: 'audio/m
 					}
 				reply(teks.trim())
 				await limitAdd(sender)
-				break
+				break*/
 // newmenu
 case 'igpost': 				
 				if (args.length < 1) return reply('Where the url?')
@@ -2170,7 +2170,7 @@ case 'covid':
                     })
                 await limitAdd(sender)
 				break 
-				case '.registro':
+				case 'registro':
 				case 'verify':
 					denz.updatePresence(from, Presence.composing)
 					if (isUser) return reply('*ʏᴏᴜ ᴀʀᴇ ʀᴇɢɪsᴛᴇʀᴇᴅ!*')
@@ -2186,7 +2186,6 @@ case 'covid':
 					brando = await getBuffer(`https://pencarikode.xyz/api/cita-cita?apikey=pais`, {method: 'get'})                
                     daftarimg = await getBuffer(ppimg)
 					denz.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
-					denz.sendMessage(from, brando, MessageType.audio, {quoted: mek, mimetype:'./mp3/verify.m4a',ptt:true})
 					break 
                     case 'profile':
     				denz.updatePresence(from, Presence.composing)
@@ -2201,8 +2200,7 @@ case 'covid':
 					buff = await getBuffer(profil)
 					denz.sendMessage(from, buff, image, {quoted: mek, caption: profile})
 					brando = await getBuffer(`https://pencarikode.xyz/api/cita-cita?apikey=pais`, {method: 'get'})                
-                    denz.sendMessage(from, brando, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-					break
+                    break
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -3035,7 +3033,7 @@ break
                 denz.sendMessage(from, `┏━━━━━━━━━━━━━━━
 ┠⊷️Oi, ${pushname2}
 ┠⊷️sᴘᴇᴇᴅ: ${latensi.toFixed(4)} _ms_
-┠⊷️ᴅᴇᴠɪᴄᴇ: ɪᴘʜᴏɴᴇ 7
+┠⊷️ᴅᴇᴠɪᴄᴇ: En la cleta de tu mamà
 ┠⊷️ᴛᴏᴛᴀʟ ᴜꜱᴇʀ: *${user.length}* ᴜꜱᴇʀꜱ
 ┗━━━━━━━━━━━━━━━`, text, { quoted: mek})
                     break
@@ -4101,9 +4099,9 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 *ʟᴜᴀ sᴇʀ ᴏғᴄ* 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 *lista de mamañemas* 〙═══', members_id, true)
 					break
-			    case 'mentionall':
+			    case 'vengann':
 			    if (isBanned) return reply(mess.only.benned)    
 			    if (!isUser) return reply(mess.only.userB)
 			    				
@@ -5146,7 +5144,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					}
 					reply(teks.trim())
 					await limitAdd(sender)
-					break */
+					break *//*
 case 'husbu':
 				if (!isUser) return reply(mess.only.userB)
 				try {
@@ -5158,7 +5156,7 @@ case 'husbu':
 						reply(' *ERROR* ')
 					}
 					await limitAdd(sender)
-					break
+					break*/
             case 'nangis':
 				if (!isUser) return reply(mess.only.userB)
 				ranp = getRandom('.gif')

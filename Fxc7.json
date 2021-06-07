@@ -1,7 +1,12 @@
 {
 	"clientID": "BWchT4jYJfZy+4rZCXdKZQ==",
+<<<<<<< Updated upstream
 	"serverToken": "1@1Zv8QcA9Brbz8USSEizMfCoLBGZSgUrwBtinQKfVFyfGp0CVK5hBA3lIuqYnYyL58A06kiJyuRcXMg==",
 	"clientToken": "QRDBJwAmYuWPVV6OpZpiGT+HhD9CjDpog/ocRDlLFMs=",
+=======
+	"serverToken": "1@TAhk+h6ZjkVokWa7f5CxGsxgGbWUeyNCCukKyGezfim70y6gGiAqiR2IGsWU6WbvuhkZy+lHBBtAxQ==",
+	"clientToken": "HnlQ3fV8nLG6wYnU9+N/k24Cc7Gj48A9e1xSZntpMdU=",
+>>>>>>> Stashed changes
 	"encKey": "Cr9wiycj5nNsx3Z2WJlkQ4quChSRgnx07gqrzAa0DSs=",
 	"macKey": "R7aw6jLtwpd4gf0XArIVHce7Xa2k7fYbeI5bYpNzZiw="
 }
